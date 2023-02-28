@@ -1,1 +1,1 @@
-# module-federation-fabricator
+# module-federation-navigator
