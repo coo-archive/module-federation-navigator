@@ -1,0 +1,11 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		"./projects/ngcx-routine/src/**/*",
+		"./projects/ngcx-module-federation-navigator/src/**/*",
+		"./projects/example-context/src/**/*",
+		"./projects/example-module-a/src/**/*",
+		"./projects/example-module-b/src/**/*",
+		"./projects/example-app/src/**/*"
+	]
+}

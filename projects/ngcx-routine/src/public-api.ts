@@ -1,0 +1,1 @@
+export { NgcxRoutineModule } from './lib/ngcx.routine.module';
