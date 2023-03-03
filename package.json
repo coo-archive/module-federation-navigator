@@ -16,13 +16,9 @@
 		"start:example:app": "ng serve example-app -o --port 5000",
 		"start:example:all": "concurrently \"yarn start:example:module-a\" \"yarn start:example:module-b\" \"yarn start:example:app\" ",
 		"start": "yarn start:example:all",
-		"build:example-app": "ng build example-app --prod",
-		"serve:dist": "concurrently \"serve dist/example-app -l 5000 -s\" \"serve dist/example-module-a -l 3000 -s\" ",
-		"build": "npm run build:example-app && npm run build:example:module-a",
 		"test": "ng test",
 		"lint": "ng lint",
-		"e2e": "ng e2e",
-		"run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
+		"e2e": "ng e2e"
 	},
 	"dependencies": {
 		"@angular-architects/module-federation": "^14.3.0",
@@ -36,6 +32,7 @@
 		"@angular/platform-browser": "^14.0.0",
 		"@angular/platform-browser-dynamic": "^14.0.0",
 		"@angular/router": "^14.0.0",
+		"@ngcx/module-federation-navigator": "file:./dist/ngcx/module-federation-navigator",
 		"rxjs": "~6.6.0",
 		"tslib": "^2.0.0",
 		"uuid": "9.0.0",
